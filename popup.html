@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEO Intelligence Suite</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>SEO Intelligence Suite</h1>
+        <a href="about.html" target="_blank" class="creator-badge">by Shreyash Meshram</a>
+      </div>
+      <div class="header-actions">
+        <button id="performanceBtn" class="action-btn" title="View Performance Metrics">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <button id="exportBtn" class="export-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16L12 8M12 16L9 13M12 16L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 15V16C3 18.2091 4.79086 20 7 20H17C19.2091 20 21 18.2091 21 16V15M3 9V8C3 5.79086 4.79086 4 7 4H17C19.2091 4 21 5.79086 21 8V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+    
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="basic">Strategic Overview</button>
+      <button class="tab-btn" data-tab="keywords">Keyword Analytics</button>
+      <button class="tab-btn" data-tab="headers">Content Structure</button>
+      <button class="tab-btn" data-tab="performance">Performance</button>
+    </div>
+
+    <!-- Add new performance tab content -->
+    <div class="tab-content" id="performance">
+      <div class="performance-metrics">
+        <h3>Page Load Timeline</h3>
+        <div class="timeline-container">
+          <div class="timeline-chart">
+            <div class="timeline-phases"></div>
+            <div class="timeline-markers"></div>
+          </div>
+          <div class="timeline-legend">
+            <span class="legend-item"><span class="legend-color dns"></span>DNS</span>
+            <span class="legend-item"><span class="legend-color connecting"></span>Connecting</span>
+            <span class="legend-item"><span class="legend-color sending"></span>Sending</span>
+            <span class="legend-item"><span class="legend-color receiving"></span>Receiving</span>
+            <span class="legend-item"><span class="legend-color dom"></span>DOM Processing</span>
+          </div>
+        </div>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Start</th>
+              <th>Duration</th>
+              <th>End</th>
+            </tr>
+          </thead>
+          <tbody id="metricsTableBody">
+            <!-- Data will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab-content active" id="basic">
+      <div id="results">
+        <div class="loader">Analyzing page performance...</div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="keywords">
+      <div id="keyword-results">
+        <div class="loader">Processing keyword analytics...</div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="headers">
+      <div id="header-results">
+        <div class="loader">Evaluating content hierarchy...</div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
