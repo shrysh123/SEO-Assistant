@@ -85,8 +85,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Shreyash Meshram**
 - Email: shreyashm658@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- LinkedIn: https://www.linkedin.com/in/shreyash-meshram-78420220a/
+- GitHub: 
 
 ## Acknowledgments
 
