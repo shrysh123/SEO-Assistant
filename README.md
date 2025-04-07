@@ -1,4 +1,3 @@
-# SEO-Assistant
 # SEO Intelligence Suite - Chrome Extension
 
 A powerful, AI-driven SEO analysis tool that provides real-time insights and recommendations for webpage optimization.
